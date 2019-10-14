@@ -15,15 +15,15 @@
 	BIO *bne_public=NULL, *bne_private=NULL;
 	int bits=2048;
 	unsigned long e=RSA_F4;
-	char *files[];
+	char *files;
 
 
 void encrypte_file(char
- *argsc[], char crypt_args[]){
+ *argsc, char crypt_args[]){
 
-	files=file_io(argsc);	
+	files=file_io(*argsc);	
 		int arr_length=sizeof(files)/sizeof(char);
-		if(files>1){
+		if(1){
 			//zip file  before encrypting 		
 
 	}
